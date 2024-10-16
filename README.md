@@ -1,3 +1,3 @@
 # React Todo App
 
-![alt text](image.png)
+![alt text](app-screen.png)
