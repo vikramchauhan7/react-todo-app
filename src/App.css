@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* --primary1: #005b78; */
+  /* --primary2: #005b78; */
+  /* --secondary: #00708f; */
+  --primary-1: rgba(0, 91, 120, 1);
+  --primary-2: rgba(3, 126, 166, 1);
+  --secondary: rgba(0, 94, 123, 1);
+  --tertiary-1: rgba(1, 71, 93, 1);
+  --tertiary-2: rgba(5, 77, 100, 1);
+  --font-color: rgba(86, 177, 205, 1);
+  --font-color-active: #fff;
+  --font-size-1: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  color: var(--font-color);
+}
+
+.todos-container {
+  height: 400px;
+  width: 300px;
+  background: linear-gradient(
+    45deg,
+    var(--primary-1) 0%,
+    var(--primary-2) 100%
+  );
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.active-text {
+  color: var(--font-color-active);
+}
+
+.tabs {
+  background-color: var(--secondary);
+  width: 100%;
+  border-radius: 15px;
+  font-size: var(--font-size-1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.tab {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.tab:hover {
+  color: var(--font-color-active);
+}
+
+.todos {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+.todos::-webkit-scrollbar {
+  width: 0px;
+}
+
+.todo {
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
