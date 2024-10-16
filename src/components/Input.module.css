@@ -12,12 +12,16 @@
   background-color: var(--tertiary-1);
   border-radius: 20px;
   color: var(--font-color-active);
-  box-shadow: var(--shadow-1);
+  transition: all 0.2s ease-in;
+}
+
+.input input:focus {
+  background-color: var(--tertiary-2);
 }
 
 .input input::placeholder {
   color: var(--font-color);
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
 .input button {
@@ -26,13 +30,18 @@
   right: 5px;
   padding: 10px 15px;
   border-radius: 20px;
-  background-color: var(--tertiary-2);
+  background-color: var(--tertiary-1);
   cursor: pointer;
-  color: var(--font-color-active);
+  color: #d1d1d1;
   border: 1px solid #22718a;
   transition: all 0.2s ease-in;
 }
 
+/* .input button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+} */
+
 .input button:hover {
-  background-color: var(--tertiary-1);
+  background-color: var(--tertiary-2);
 }

@@ -3,13 +3,14 @@
 :root {
   --primary-1: rgba(0, 78, 103, 1);
   --primary-2: rgba(2, 125, 163, 1);
-  --secondary: rgba(0, 84, 108, 1);
-  --tertiary-1: rgba(3, 68, 88, 1);
-  --tertiary-2: rgba(3, 80, 105, 1);
+  --secondary: rgba(0, 84, 108, 0.5);
+  --tertiary-1: rgba(0, 76, 101, 0.6);
+  --tertiary-2: rgba(3, 68, 88, 1);
   --font-color: rgba(86, 177, 205, 1);
   --font-color-active: #fff;
   --font-size-1: 15px;
-  --shadow-1: 1px 1px 1px 1px #004f69;
+  --shadow-1: 1px 1px 1px 1px #035874;
+  --shadow-2: 1px 1px 1px 1px #004f69;
 }
 
 * {
@@ -37,7 +38,7 @@
     var(--primary-1) 0%,
     var(--primary-2) 100%
   );
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -51,9 +52,8 @@
 .tabs {
   background-color: var(--secondary);
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: var(--font-size-1);
-  box-shadow: var(--shadow-1);
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -70,7 +70,7 @@
 
 .todos {
   width: 100%;
-  height: 200px;
+  height: 230px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -84,12 +84,15 @@
 
 .todo {
   background-color: var(--secondary);
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: var(--shadow-1);
+  width: 99%;
+  padding: 15px 20px;
+  border-radius: 30px;
   display: flex;
   gap: 10px;
+}
+
+.todo span {
+  cursor: pointer;
 }
 
 .done {
