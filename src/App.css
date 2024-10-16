@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  /* --primary1: #005b78; */
-  /* --primary2: #005b78; */
-  /* --secondary: #00708f; */
-  --primary-1: rgba(0, 91, 120, 1);
-  --primary-2: rgba(3, 126, 166, 1);
-  --secondary: rgba(0, 94, 123, 1);
-  --tertiary-1: rgba(1, 71, 93, 1);
-  --tertiary-2: rgba(5, 77, 100, 1);
+  --primary-1: rgba(0, 78, 103, 1);
+  --primary-2: rgba(2, 125, 163, 1);
+  --secondary: rgba(0, 84, 108, 1);
+  --tertiary-1: rgba(3, 68, 88, 1);
+  --tertiary-2: rgba(3, 80, 105, 1);
   --font-color: rgba(86, 177, 205, 1);
   --font-color-active: #fff;
   --font-size-1: 15px;
+  --shadow-1: 1px 1px 1px 1px #004f69;
 }
 
 * {
@@ -55,6 +53,7 @@
   width: 100%;
   border-radius: 15px;
   font-size: var(--font-size-1);
+  box-shadow: var(--shadow-1);
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -88,6 +87,7 @@
   width: 100%;
   padding: 10px 20px;
   border-radius: 20px;
+  box-shadow: var(--shadow-1);
   display: flex;
   gap: 10px;
 }
